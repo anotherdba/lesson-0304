@@ -13,9 +13,9 @@ jobs:
       - name: Azure login
         uses: azure/login@v2
         with:
-          client-id: ${{ AZURE_CRED.CLIENTID }}
-          tenant-id: ${{ AZURE_CRED.TENANTID }}
-          subscription-id: ${{ AZURE_CRED.SUBSCRIPTIONID }}
+          client-id: ${{ CLIENTID }}
+          tenant-id: ${{ TENANTID }}
+          subscription-id: ${{ SUBSCRIPTIONID }}
           enable-AzPSSession: true
 
       - name: Azure CLI script
